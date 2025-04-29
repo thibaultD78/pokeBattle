@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.pokebattle.HelloController">
+   <children>
+      <ImageView fitHeight="451.0" fitWidth="616.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/pokemon-36-720px.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="apHome" layoutX="10.0" layoutY="-137.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="265.0" layoutX="168.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnDeck" fitHeight="35.0" fitWidth="116.0" layoutX="247.0" layoutY="333.0" onMouseClicked="#clickDeck" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/deck.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnBooster" fitHeight="35.0" fitWidth="139.0" layoutX="245.0" layoutY="200.0" onMouseClicked="#clickBooster" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/booster.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnCollection" fitHeight="35.0" fitWidth="163.0" layoutX="222.0" layoutY="267.0" onMouseClicked="#clickCollection" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/collection.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apDeck" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <ImageView fx:id="imgCarte1" fitHeight="116.0" fitWidth="91.0" layoutX="503.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte2" fitHeight="124.0" fitWidth="82.0" layoutX="503.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte3" fitHeight="116.0" fitWidth="82.0" layoutX="420.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte4" fitHeight="116.0" fitWidth="82.0" layoutX="461.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte5" fitHeight="116.0" fitWidth="91.0" layoutX="420.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte6" fitHeight="116.0" fitWidth="89.0" layoutX="338.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte7" fitHeight="123.0" fitWidth="82.0" layoutX="256.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte8" fitHeight="116.0" fitWidth="94.0" layoutX="173.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte9" fitHeight="116.0" fitWidth="82.0" layoutX="91.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte10" fitHeight="116.0" fitWidth="82.0" layoutX="8.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte11" fitHeight="116.0" fitWidth="82.0" layoutX="379.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte12" fitHeight="116.0" fitWidth="82.0" layoutX="297.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte13" fitHeight="116.0" fitWidth="94.0" layoutX="218.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte14" fitHeight="116.0" fitWidth="94.0" layoutX="136.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte15" fitHeight="116.0" fitWidth="82.0" layoutX="55.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte16" fitHeight="116.0" fitWidth="82.0" layoutX="338.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte17" fitHeight="116.0" fitWidth="82.0" layoutX="259.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte18" fitHeight="116.0" fitWidth="82.0" layoutX="177.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte19" fitHeight="116.0" fitWidth="82.0" layoutX="95.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgCarte20" fitHeight="120.0" fitWidth="82.0" layoutX="14.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnHome2" fitHeight="35.0" fitWidth="35.0" layoutX="14.0" layoutY="9.0" onMouseClicked="#clickHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/home.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <Label layoutX="242.0" layoutY="14.0" text="Voici votre deck">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="apBooster" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <ImageView fitHeight="438.0" fitWidth="463.0" layoutX="108.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/1117854_83be4.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="539.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/pokedollar.png" />
+               </image>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="438.0" fitWidth="463.0" layoutX="108.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/1117854_83be4.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="108.0" layoutY="159.0" text="Cliquez sur le booster pour l'ouvrir !!!">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="carteObtenue" fitHeight="227.0" fitWidth="158.0" layoutX="250.0" layoutY="231.0" onMouseClicked="#clickSuivante" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/pokemon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnHome" fitHeight="35.0" fitWidth="41.0" layoutX="14.0" layoutY="121.0" onMouseClicked="#clickHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/home.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="btnAchat" fitHeight="35.0" fitWidth="130.0" layoutX="478.0" layoutY="451.0" onMouseClicked="#clickAchat" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/achat.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblArgent" layoutX="490.0" layoutY="121.0" text="2000" textFill="#cdb608">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apCollection" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imgCard" fitHeight="296.0" fitWidth="206.0" layoutX="94.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/imageBase.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblNom" layoutX="352.0" layoutY="72.0" text="nom : ?" />
+            <Label fx:id="lblPv" layoutX="352.0" layoutY="99.0" text="pv : ?" />
+            <Label fx:id="lblType" layoutX="353.0" layoutY="127.0" text="type : ?" />
+            <Label fx:id="lblEffet" layoutX="352.0" layoutY="158.0" text="effet : ?" />
+            <Label fx:id="lblAttaque" layoutX="350.0" layoutY="224.0" text="attaque : ?" />
+            <Label fx:id="lblAttaque2" layoutX="350.0" layoutY="260.0" text="attaque : ?" />
+            <Label fx:id="lblCpRetaite" layoutX="351.0" layoutY="300.0" text="coup de retaite : ?" />
+            <Label fx:id="lblSousEvo" layoutX="352.0" layoutY="338.0" text="sous-evolution : ?" />
+            <ImageView fx:id="btnPrecedent" fitHeight="65.0" fitWidth="35.0" layoutX="14.0" layoutY="175.0" onMouseClicked="#clickPrecedent" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/flecheDroite.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnSuivant" fitHeight="65.0" fitWidth="35.0" layoutX="551.0" layoutY="175.0" onMouseClicked="#clickSuivant" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/flecheGauche.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnHome3" fitHeight="35.0" fitWidth="41.0" layoutX="6.0" layoutY="6.0" onMouseClicked="#clickHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/home.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="163.0" layoutX="438.0" layoutY="363.0" onMouseClicked="#clickAddDeck" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/8206b30af8bc30136e12d531a3866eb2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
