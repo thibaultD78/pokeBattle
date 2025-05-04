@@ -17,7 +17,7 @@
       </ImageView>
       <AnchorPane fx:id="apHome" layoutX="10.0" layoutY="-137.0" prefHeight="200.0" prefWidth="200.0" visible="false">
          <children>
-            <ImageView fitHeight="82.0" fitWidth="265.0" layoutX="168.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="104.0" fitWidth="269.0" layoutX="169.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/logo.png" />
                </image>
@@ -241,6 +241,61 @@
             <ImageView fitHeight="28.0" fitWidth="163.0" layoutX="438.0" layoutY="363.0" onMouseClicked="#clickAddDeck" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/8206b30af8bc30136e12d531a3866eb2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="98.0" layoutX="353.0" layoutY="360.0" onMouseClicked="#clickVendre" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Vendre.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEnergie1" fitHeight="28.0" fitWidth="20.0" layoutX="358.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/energieNormal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEnergie2" fitHeight="28.0" fitWidth="20.0" layoutX="381.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/energieNormal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEnergie3" fitHeight="28.0" fitWidth="20.0" layoutX="403.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/energieNormal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEnergie4" fitHeight="28.0" fitWidth="20.0" layoutX="425.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/energieNormal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEnergie5" fitHeight="28.0" fitWidth="20.0" layoutX="358.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/energieNormal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEnergie6" fitHeight="28.0" fitWidth="20.0" layoutX="381.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/energieNormal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEnergie7" fitHeight="28.0" fitWidth="20.0" layoutX="403.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/energieNormal.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEnergie8" fitHeight="28.0" fitWidth="20.0" layoutX="425.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/energieNormal.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="463.0" layoutY="277.0" onMouseClicked="#clickInfo2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/infos.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="463.0" layoutY="241.0" onMouseClicked="#clickInfo1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/infos.png" />
                </image>
             </ImageView>
          </children>

@@ -2,6 +2,7 @@ package sio.pokebattle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -57,6 +58,14 @@ public class HelloController implements Initializable {
     public ImageView imgCarte3;
     public ImageView imgCarte2;
     public ImageView imgCarte1;
+    public ImageView imgEnergie1;
+    public ImageView imgEnergie2;
+    public ImageView imgEnergie3;
+    public ImageView imgEnergie4;
+    public ImageView imgEnergie5;
+    public ImageView imgEnergie6;
+    public ImageView imgEnergie7;
+    public ImageView imgEnergie8;
     Personages j1;
     Personages j2;
     Cartes eeau;
@@ -160,6 +169,120 @@ public class HelloController implements Initializable {
     Cartes bill;
     Cartes boosterOuvert;
     Cartes booster;
+    Attaque confuseRay;
+    Attaque hydroPump;
+    Attaque scrunch;
+    Attaque doubleEdge;
+    Attaque fireSpin;
+    Attaque sing;
+    Attaque metronome;
+    Attaque dragonRage;
+    Attaque bubbleBeam;
+    Attaque jab;
+    Attaque specialPunch;
+    Attaque seismicToss;
+    Attaque tunderWave;
+    Attaque selfdestruct;
+    Attaque psychic;
+    Attaque barrier;
+    Attaque thrash;
+    Attaque toxic;
+    Attaque lure;
+    Attaque fireBlast;
+    Attaque waterGun;
+    Attaque whirlpool;
+    Attaque agility;
+    Attaque thunder;
+    Attaque solarbeam;
+    Attaque thunderbolt;
+    Attaque twineedle;
+    Attaque poisonString;
+    Attaque slam;
+    Attaque hyperBeam;
+    Attaque slash;
+    Attaque slashRep;
+    Attaque earthquake;
+    Attaque thundershock;
+    Attaque thunderpunch;
+    Attaque electricShock;
+    Attaque whirlwind;
+    Attaque mirrorMove;
+    Attaque flamethrower;
+    Attaque takeDwn;
+    Attaque auroraBeam;
+    Attaque iceBeam;
+    Attaque pound;
+    Attaque leekSlap;
+    Attaque potSmash;
+    Attaque flare;
+    Attaque hypnosis;
+    Attaque dreamEater;
+    Attaque vineWhip;
+    Attaque poisonpowder;
+    Attaque doubleslap;
+    Attaque meditate;
+    Attaque recover;
+    Attaque superPsy;
+    Attaque stiffen;
+    Attaque karateChop;
+    Attaque submission;
+    Attaque tackle;
+    Attaque flail;
+    Attaque firePunch;
+    Attaque doubleKick;
+    Attaque hornDrill;
+    Attaque amnesia;
+    Attaque doubleslapTet;
+    Attaque conversion1;
+    Attaque conversion2;
+    Attaque biteRata;
+    Attaque superFang;
+    Attaque headbutt;
+    Attaque biteCara;
+    Attaque withdraw;
+    Attaque psyshock;
+    Attaque leechSeed;
+    Attaque stringShot;
+    Attaque scratch;
+    Attaque ember;
+    Attaque dig;
+    Attaque mudSlap;
+    Attaque furryAttack;
+    Attaque confuseRaySopo;
+    Attaque sleepingGaz;
+    Attaque destinyBond;
+    Attaque foulGas;
+    Attaque lowKick;
+    Attaque thunderWave;
+    Attaque selfdestructMagne;
+    Attaque stunSpore;
+    Attaque hornHazard;
+    Attaque rockThrow;
+    Attaque whirlwindRoo;
+    Attaque harden;
+    Attaque gnaw;
+    Attaque thunderJolt;
+    Attaque waterGunpti;
+    Attaque smashKick;
+    Attaque flameTail;
+    Attaque sandAtt;
+    Attaque bubble;
+    Attaque starFreeze;
+    Attaque slap;
+    Attaque bind;
+    Attaque poisonSting;
+    Attaque tackleElec;
+    Attaque poisonpowderCocon;
+    Attaque recoverSta;
+    Attaque confuseRayGoup;
+    Cartes missingNo;
+    energie eau;
+    energie elec;
+    energie plante;
+    energie feu;
+    energie combat;
+    energie normal;
+    energie psy;
     ArrayList<Cartes> listCartes = new ArrayList<>();
     ArrayList<Cartes> listEnergies = new ArrayList<>();
     ArrayList<Cartes> listDresseurs = new ArrayList<>();
@@ -170,8 +293,6 @@ public class HelloController implements Initializable {
     int argent=2000;
     boolean achat= false;
     int indice=0;
-    ArrayList<Cartes> listCartesUtilisables = new ArrayList<>();
-    int nbClick;
 
     public void changeImageViewImg(ImageView imgView, String linkImage){
         imgView.setImage(
@@ -198,6 +319,14 @@ public class HelloController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         j1 = new Personages(0,false,false);
         j2 = new Personages(0,false,false);
+        normal= new energie("energieNormal.png");
+        eau= new energie("energieEau.png");
+        feu= new energie("energieFeu.png");
+        plante= new energie("energiePlante.png");
+        elec= new energie("energieElec.png");
+        combat= new energie("energieCombat.png");
+        psy= new energie("energiePsy.png");
+        missingNo=new Cartes("","","","imageBase.png");
         boosterOuvert=new Cartes("","","","pokemonOuvert.png");
         booster=new Cartes("","","","pokemon.png");
         eeau= new Cartes("energie eau","energie","apporte une ernergie eau","365_102.png" );
@@ -299,6 +428,112 @@ public class HelloController implements Initializable {
         magneton=new Cartes("magnéton","pokemon","","272_9.png",60,"électrique",1,true,"magnéti");
         macogneur=new Cartes("macogneur","pokemon","infigez 10 dégats au pokemon qui \nattaque macogneur","271_8.png",100,"combat",3,true,"machopeur");
         levenard=new Cartes("levénard","pokemon","","266_3.png",120,"normal",1,false,"base");
+        confuseRayGoup=new Attaque("Confuse Ray","feu",10,"lancez une pièce si c'est face le pokemon adverse est confu");
+        recoverSta=new Attaque("Recover","eau",0,"soigne staros en echange d'une energie eau");
+        confuseRay=new Attaque("Confuse Ray","psy",30,"lancer une pièce si c'est face le pokemon adverse est confu");
+        hydroPump=new Attaque("Hydro Pump","eau",40,"inflige 10 degats pour chaques energiers supplémentaires sur tortank");
+        scrunch=new Attaque("Scrunch","normal",0,"lancer une piece si c'est face levenard suit 0 dégats au prochain tour");
+        doubleEdge=new Attaque("Double_edge","normal",80,"perd 80 pv");
+        fireSpin=new Attaque("Fire Spin","feu",100,"défaussez deux energies de dracofeu");
+        sing=new Attaque("Sing","normal",0,"lancer une piece si c'est face le pokemon adverse est endormi");
+        metronome=new Attaque("Métronome","normal",0,"utilise une attaque du pokemon adverse");
+        dragonRage=new Attaque("Dragon Rage","eau",50,"");
+        bubbleBeam=new Attaque("Bubblebeam","eau",40,"lancez une piece si c'est face le pokemon adverse est paralizé");
+        jab=new Attaque("Jab","combat",20,"");
+        poisonpowderCocon=new Attaque("Poisonpowder","plante",2,"lancez une pièce si c'est face le pokemon adverse est empoisoné");
+        specialPunch=new Attaque("Special Punch","combat",40,"");
+        seismicToss=new Attaque("Seismic Toss","combat",60,"");
+        tunderWave=new Attaque("Thunder Wave","électrique",30,"lancez une piece si c'est face le pokemon adverse est paralizé");
+        selfdestruct=new Attaque("Selfdestruct","électrique",80,"infilige 20 dégats a tout les pokemons de banc et magnéton meurt");
+        psychic=new Attaque("Psychic","psy",10,"inflige 10 dégats supplémentaires pour chaques énergies sur le pokémon adverse");
+        barrier=new Attaque("Barrier","psy",0,"défaussez une energie psy la prochane attaque du pokemon adverse ne fera rien");
+        thrash=new Attaque("Thrash","plante",30,"lancez une pièce si c'est face l'attaque infligera 10 dégats supplémentaire si c'est pile l'attaque infligera 10 dégas a nidoking");
+        toxic=new Attaque("Toxic","plante",20,"le pokémon adverse est empoisoné il recois 20 dégats par tours au lieu de 10");
+        lure=new Attaque("Lure","feu",0,"échanger un pokémon de banc de l'adversaire avec son pokemon actif");
+        fireBlast=new Attaque("Fire Blast","feu",80,"défaussez une energie feu");
+        waterGun=new Attaque("Water Gun","eau",30,"inflige 10 dégats supplémentaire pour chaques energies eau supplémentaires au coup energétique de l'attaque");
+        whirlpool=new Attaque("Whirlpool","eau",40,"défaussez une energie attachée au pokemon adverse");
+        agility=new Attaque("Agility","électrique",20,"lancez une pièce si c'est face l'attaque du pokemon adverse ne fera rien");
+        thunder=new Attaque("Thunder","électrique",60,"lancez une pièce si c'est pile ce pokemon s'infilge 30");
+        solarbeam=new Attaque("Solarbeam","plante",60,"");
+        thunderbolt=new Attaque("Thunderbolt","électrique",100,"défaussez toutes les energies de se pokemon");
+        twineedle=new Attaque("Twineedle","plante",30,"lancez deux pièces infligez 30 fois le nombre de faces");
+        poisonString=new Attaque("Poison String","plante",40,"lancez une pièce si c'est face le pokemon adverse est empoisonné");
+        slam=new Attaque("Slam","normal",30,"lancez deux pièces infligez 30 fois le nombre de faces");
+        hyperBeam=new Attaque("Hyper Beam","psy",20,"déffaussez une energie du pokemon adverse");
+        slash=new Attaque("Slash","combat",40,"");
+        earthquake=new Attaque("Earthquake","combat",70,"infligez 10 dégats a tout les pokemon de banc");
+        thundershock=new Attaque("Thundershock","électrique",10,"lancez une pièce si c'est face le pokemon adverse est paralizé");
+        thunderpunch=new Attaque("Thunderpunch","électrique",30,"lancez une pièce si c'est face l'attaque infligera 10 dégats supplémentaire si c'est pile l'attaque infligera 10 dégas a électek");
+        electricShock=new Attaque("Electric Shock","électrique",50,"lancez une pièce si c'est pile prenez 10 dégats");
+        whirlwind=new Attaque("Whirlwind","normal",20,"échange un pokémon du banc de ton adversaire avec son pokemon actif");
+        mirrorMove=new Attaque("Mirror Move","normal",0,"infligez des dégats égaux a la dèrnière attaque d'adversaire");
+        flamethrower=new Attaque("Flamethrower","feu",50,"défausez une energie feu de ce pokemon");
+        takeDwn=new Attaque("Take Down","feu",80,"recevez 30 dégats");
+        slashRep=new Attaque("Slash","feu",30,"");
+        auroraBeam=new Attaque("Aurora Beam","eau",50,"");
+        iceBeam=new Attaque("Ice Beam","eau",30,"lancez une pièce si c'est face le pokemon adverse paralizé");
+        pound=new Attaque("Pound","normal",10,"");
+        leekSlap=new Attaque("Leek Slap","normal",30,"utilisable qu'une fois, lancez une pièce si c'est pile l'attaque ne fait rien");
+        potSmash=new Attaque("Pot Smash","normal",30,"");
+        flare=new Attaque("Flare","feu",20,"");
+        hypnosis=new Attaque("Hypnosis","psy",0,"le pokemon adverse est endormi");
+        dreamEater=new Attaque("Dream Eater","psy",50,"ne marche que si le pokemon adverse est endormi");
+        vineWhip=new Attaque("Vine Whip","plante",30,"");
+        poisonpowder=new Attaque("Poisonpowder","plante",20,"le pokemon adverse est empoisonné");
+        doubleslap=new Attaque("Doubleslap","psy",10,"lancez 2 pices infilgez le nombre de faces fois10");
+        meditate=new Attaque("Meditate","psy",20,"inflige 10 dégats supplémentaires tout les 10 dégats sur le pokemon adverse");
+        recover=new Attaque("Recover","psy",0,"soigne kadbra en echange d'une energie psy");
+        superPsy=new Attaque("Super Psy","psy",50,"");
+        stiffen=new Attaque("Stiffen","plante",0,"lancez une pièce si c'est face coconfort ne prends pas de dégats");
+        karateChop=new Attaque("Karate Chop","combat",50,"inflige 10 dégats de moins tout les 10 dégats infligez a machopeur");
+        submission=new Attaque("Submission","combat",60,"machopeur subit 20 dégats");
+        tackle=new Attaque("Tacke","eau",10,"");
+        flail=new Attaque("Flail","eau",10,"infilge 10 dégats fois le le nombre de dégats infligé a magicarpe divisé par 10");
+        firePunch=new Attaque("Fire Punch","feu",30,"");
+        doubleKick=new Attaque("Double Kick","plante",30,"lancez deux pièces inflige 30 fois le nombre de faces");
+        hornDrill=new Attaque("Horn Drill","plante",50,"");
+        amnesia=new Attaque("Amnesia","eau",0,"le pokemon adverse ne peux utiliser une de ces attaques");
+        doubleslapTet=new Attaque("Doubleslap","eau",30,"lancez deux pièces inflige 30 fois le nombre de faces");
+        conversion1=new Attaque("Conversion1","normal",0,"changez la faiblesse du pokemon adverse par celle que vous voulez");
+        conversion2=new Attaque("Conversion2","normal",0,"changez la résistance de porygon par celle que vous voulez");
+        biteRata=new Attaque("Bite","normal",20,"");
+        superFang=new Attaque("Super Fang","normal",0,"inflique la moitiée des pv du pokemon adverse");
+        headbutt=new Attaque("Headbutt","eau",10,"");
+        biteCara=new Attaque("Bite","eau",40,"");
+        withdraw=new Attaque("Withdraw","eau",0,"lancez une pièce si c'est face ce pokemon recois aucun dommages");
+        psyshock=new Attaque("Psyshock","psy",10,"lancez une pièce si c'est face le pokemon adverse est paralizé");
+        leechSeed=new Attaque("Leech Seed","plante",20,"soignez 10 a ce pokemon");
+        stringShot=new Attaque("String Shot","plante",10,"lancez une pièce si c'est face le pokemon adverse est paralizé");
+        scratch=new Attaque("Scratch","feu",10,"");
+        ember=new Attaque("Ember","feu",30,"défaussez une energie feu de ce pokemon");
+        dig=new Attaque("Dig","combat",10,"");
+        mudSlap=new Attaque("Mud Slap","combat",30,"");
+        furryAttack=new Attaque("Furry Attack","normal",10,"lancez deux pièces infligez 10 fois le nombre de faces");
+        confuseRaySopo=new Attaque("Confuse Ray","psy",10,"lancez une pièce si c'est face le pokemon adverse est confu");
+        sleepingGaz=new Attaque("Sleeping Gaz","psy",0,"lancez une pièce si c'est face le pokemon adverse est endormi");
+        destinyBond=new Attaque("Destiny Bond","psy",0,"défaussez une enrgie psy de se pokémon metez k.O le pokémon adverse si fantominus est K.O se tour");
+        foulGas=new Attaque("Foul Gas","plante",10,"lancez une pièce si c'est face le pokemon adverse est empoisonné si c'est pile le pokemon adverse est confu");
+        lowKick=new Attaque("Low Kick","combat",20,"");
+        thunderWave=new Attaque("Thunder Wave","électrique",10,"lancez une pièce si c'est face le pokemon adverse est paralizé");
+        selfdestructMagne=new Attaque("Selfdestruct","électrique",40,"infligez 10 a tout les pokemons de banc et magnéti meurt");
+        stunSpore=new Attaque("Stun Spore","plante",20,"lancez une pièce si c'est face le pokemon adverse est paralisé");
+        hornHazard=new Attaque("Horn Hazard","plante",30,"lancez une pièce si c'est pile cette attaque ne fais rien");
+        rockThrow=new Attaque("Rock Throw","combat",10,"");
+        whirlwindRoo=new Attaque("Whirlwind","normal",0,"échangez le pkemon actif de votre adversaire avec une de ses pokemons de banc");
+        harden=new Attaque("Harden","combat",0,"onix recois 30 dégats de moins sur chaques attaques au prochains tour");
+        gnaw=new Attaque("Gnaw","électrique",10,"");
+        thunderJolt=new Attaque("Thunder Jolt","électrique",30,"lancez une pièce si c'est pile recevez 10 dégats");
+        waterGunpti=new Attaque("Water Gun","eau",10,"infligez 10 dégats supplémentaires pour chaques enerdies eau en plus du coup de l'attaque");
+        smashKick=new Attaque("Smash Kick","feu",20,"");
+        flameTail=new Attaque("Flame Tail","feu",30,"");
+        sandAtt=new Attaque("Sand-attaque","combat",10,"au prochain tour de votre adversaire si il essaye d'attaquer il lance une pièce si c'est pile l'attaque ne fais rien");
+        bubble=new Attaque("Bubble","eau",10,"lancez une pièce si c'est face le pokemon adverse est paralizé");
+        starFreeze=new Attaque("Star Freeze","eau",20,"détrusez une energie eau de se pokemon la prochain attage de l'adversaire ne fais rien");
+        slap=new Attaque("Slap","eau",20,"");
+        bind=new Attaque("Bind","plante",20,"lancez une pièce si c'est face le pokemon adverse est paralizé");
+        tackleElec=new Attaque("Tackle","électrique",10,"");
+        poisonSting=new Attaque("Poison Sting","plante",10,"lancez une pièce si c'est face le pokemon adverse est paralisé");
         listCartes.add(eeau);
         listCartes.add(epsy);
         listCartes.add(eelec);
@@ -398,6 +633,181 @@ public class HelloController implements Initializable {
         listCartes.add(magneton);
         listCartes.add(macogneur);
         listCartes.add(levenard);
+        alakazam.ajouterAttque(confuseRay);
+        tortank.ajouterAttque(hydroPump);
+        levenard.ajouterAttque(scrunch,doubleEdge);
+        dracofeu.ajouterAttque(fireBlast);
+        melofee.ajouterAttque(sing,metronome);
+        leviator.ajouterAttque(dragonRage,bubbleBeam);
+        tygon.ajouterAttque(jab,specialPunch);
+        macogneur.ajouterAttque(seismicToss);
+        magneton.ajouterAttque(tunderWave,selfdestruct);
+        mewtwo.ajouterAttque(psychic,barrier);
+        nidoking.ajouterAttque(thrash,toxic);
+        feunard.ajouterAttque(lure,fireBlast);
+        tartard.ajouterAttque(waterGun,whirlpool);
+        raichu.ajouterAttque(agility,thunder);
+        florizard.ajouterAttque(solarbeam);
+        elector.ajouterAttque(thunder,thunderbolt);
+        dardargnan.ajouterAttque(twineedle,poisonString);
+        draco.ajouterAttque(slam,hyperBeam);
+        triopiqueur.ajouterAttque(slash,earthquake);
+        electek.ajouterAttque(thunderpunch,thundershock);
+        electrode.ajouterAttque(electricShock);
+        roucoups.ajouterAttque(whirlwind,mirrorMove);
+        arcanin.ajouterAttque(flamethrower,takeDwn);
+        reptincelle.ajouterAttque(slashRep,flamethrower);
+        lamentine.ajouterAttque(auroraBeam,iceBeam);
+        minidraco.ajouterAttque(pound);
+        canarticho.ajouterAttque(leekSlap,potSmash);
+        caninos.ajouterAttque(flare);
+        spectrum.ajouterAttque(hypnosis,dreamEater);
+        herbizard.ajouterAttque(vineWhip,poisonpowder);
+        lipoutou.ajouterAttque(doubleslap,meditate);
+        kadabra.ajouterAttque(recover,superPsy);
+        coconfort.ajouterAttque(stiffen,poisonpowderCocon);
+        machopeur.ajouterAttque(karateChop,submission);
+        magikarp.ajouterAttque(tackle,flail);
+        magmar.ajouterAttque(firePunch,flamethrower);
+        nidorino.ajouterAttque(doubleKick,hornDrill);
+        tetarte.ajouterAttque(amnesia,doubleslap);
+        porygon.ajouterAttque(conversion1,conversion2);
+        ratatac.ajouterAttque(biteRata,superFang);
+        otaria.ajouterAttque(headbutt);
+        carabaffe.ajouterAttque(withdraw,biteCara);
+        abra.ajouterAttque(psyshock);
+        bulbizard.ajouterAttque(leechSeed);
+        chenipan.ajouterAttque(stringShot);
+        salameche.ajouterAttque(scratch,ember);
+        topiqueur.ajouterAttque(dig,mudSlap);
+        doduo.ajouterAttque(furryAttack);
+        soporifik.ajouterAttque(pound,confuseRaySopo);
+        fantominus.ajouterAttque(sleepingGaz,destinyBond);
+        smogo.ajouterAttque(foulGas);
+        machoc.ajouterAttque(lowKick);
+        magneti.ajouterAttque(thunderWave,selfdestructMagne);
+        coconfort.ajouterAttque(stiffen,stunSpore);
+        nidoran.ajouterAttque(hornHazard);
+        onix.ajouterAttque(rockThrow,harden);
+        roucool.ajouterAttque(whirlwindRoo);
+        pikachu.ajouterAttque(gnaw,thunderJolt);
+        ptitard.ajouterAttque(waterGun);
+        ponyta.ajouterAttque(smashKick,flameTail);
+        ratata.ajouterAttque(biteRata);
+        sabelette.ajouterAttque(sandAtt);
+        carapuce.ajouterAttque(bubble,withdraw);
+        staros.ajouterAttque(recoverSta,starFreeze);
+        stari.ajouterAttque(slap);
+        sacdeneu.ajouterAttque(bind,poisonpowder);
+        voltorbe.ajouterAttque(tackleElec);
+        goupix.ajouterAttque(confuseRaySopo);
+        aspicot.ajouterAttque(poisonSting);
+        confuseRay.ajouterEnergies(psy,psy,psy);
+        hydroPump.ajouterEnergies(eau,eau,eau);
+        scrunch.ajouterEnergies(normal,normal);
+        doubleEdge.ajouterEnergies(normal,normal,normal,normal);
+        fireSpin.ajouterEnergies(feu,feu,feu,feu);
+        sing.ajouterEnergies(normal);
+        metronome.ajouterEnergies(normal,normal,normal);
+        dragonRage.ajouterEnergies(eau,eau,eau);
+        bubbleBeam.ajouterEnergies(eau,eau,eau,eau);
+        jab.ajouterEnergies(combat);
+        specialPunch.ajouterEnergies(combat,combat,normal);
+        seismicToss.ajouterEnergies(combat,combat,combat,normal);
+        tunderWave.ajouterEnergies(elec,elec,normal);
+        selfdestruct.ajouterEnergies(elec,elec,normal,normal);
+        psychic.ajouterEnergies(psy,normal);
+        barrier.ajouterEnergies(psy,psy);
+        thrash.ajouterEnergies(plante,normal,normal);
+        toxic.ajouterEnergies(plante,plante,plante);
+        lure.ajouterEnergies(normal,normal);
+        fireBlast.ajouterEnergies(feu,feu,feu,feu);
+        waterGun.ajouterEnergies(eau,eau,normal);
+        whirlpool.ajouterEnergies(eau,eau,normal,normal);
+        agility.ajouterEnergies(elec,normal,normal);
+        thunder.ajouterEnergies(elec,elec,elec,normal);
+        solarbeam.ajouterEnergies(plante,plante,plante,plante);
+        thunderbolt.ajouterEnergies(elec,elec,elec,elec);
+        twineedle.ajouterEnergies(normal,normal,normal);
+        poisonString.ajouterEnergies(plante,plante,plante);
+        slam.ajouterEnergies(normal,normal,normal);
+        hyperBeam.ajouterEnergies(normal,normal,normal,normal);
+        slash.ajouterEnergies(combat,combat,normal);
+        earthquake.ajouterEnergies(combat,combat,combat,combat);
+        thundershock.ajouterEnergies(elec);
+        thunderpunch.ajouterEnergies(elec,normal);
+        electricShock.ajouterEnergies(elec,elec,elec,elec);
+        whirlwind.ajouterEnergies(normal,normal);
+        mirrorMove.ajouterEnergies(normal,normal,normal);
+        flamethrower.ajouterEnergies(feu,feu,normal);
+        takeDwn.ajouterEnergies(feu,feu,normal,normal);
+        slash.ajouterEnergies(normal,normal,normal);
+        auroraBeam.ajouterEnergies(eau,eau,normal);
+        iceBeam.ajouterEnergies(eau,eau,normal,normal);
+        pound.ajouterEnergies(normal);
+        leekSlap.ajouterEnergies(normal);
+        potSmash.ajouterEnergies(normal,normal,normal);
+        flare.ajouterEnergies(feu,normal);
+        hypnosis.ajouterEnergies(psy);
+        dreamEater.ajouterEnergies(psy,psy);
+        vineWhip.ajouterEnergies(plante,normal,normal);
+        poisonpowder.ajouterEnergies(plante,plante,plante);
+        doubleslap.ajouterEnergies(psy);
+        meditate.ajouterEnergies(psy,psy,normal);
+        recover.ajouterEnergies(psy,psy);
+        superPsy.ajouterEnergies(psy,psy,normal);
+        stiffen.ajouterEnergies(normal,normal);
+        poisonpowderCocon.ajouterEnergies(plante,plante);
+        karateChop.ajouterEnergies(combat,combat,normal);
+        submission.ajouterEnergies(combat,combat,normal,normal);
+        tackle.ajouterEnergies(normal);
+        flail.ajouterEnergies(eau);
+        firePunch.ajouterEnergies(feu,feu);
+        doubleKick.ajouterEnergies(plante,normal,normal);
+        hornDrill.ajouterEnergies(plante,plante,normal,normal);
+        amnesia.ajouterEnergies(eau,eau);
+        doubleslapTet.ajouterEnergies(eau,eau,normal);
+        conversion1.ajouterEnergies(normal);
+        conversion2.ajouterEnergies(normal,normal);
+        biteRata.ajouterEnergies(normal);
+        superFang.ajouterEnergies(normal,normal,normal);
+        headbutt.ajouterEnergies(eau);
+        withdraw.ajouterEnergies(eau,normal);
+        biteCara.ajouterEnergies(eau,normal,normal);
+        psyshock.ajouterEnergies(psy);
+        leechSeed.ajouterEnergies(plante,plante);
+        stringShot.ajouterEnergies(plante);
+        scratch.ajouterEnergies(normal);
+        ember.ajouterEnergies(feu,normal);
+        dig.ajouterEnergies(combat);
+        mudSlap.ajouterEnergies(combat,combat);
+        furryAttack.ajouterEnergies(normal);
+        confuseRaySopo.ajouterEnergies(psy,psy);
+        sleepingGaz.ajouterEnergies(psy);
+        destinyBond.ajouterEnergies(psy,normal);
+        foulGas.ajouterEnergies(plante,plante);
+        lowKick.ajouterEnergies(combat);
+        thunderWave.ajouterEnergies(elec);
+        selfdestructMagne.ajouterEnergies(elec,normal);
+        stunSpore.ajouterEnergies(plante,plante);
+        hornHazard.ajouterEnergies(plante);
+        rockThrow.ajouterEnergies(combat);
+        harden.ajouterEnergies(combat,combat);
+        whirlwind.ajouterEnergies(normal,normal);
+        gnaw.ajouterEnergies(normal);
+        thunderJolt.ajouterEnergies(elec,normal);
+        waterGunpti.ajouterEnergies(eau);
+        smashKick.ajouterEnergies(normal,normal);
+        flameTail.ajouterEnergies(feu,feu);
+        sandAtt.ajouterEnergies(combat);
+        bubble.ajouterEnergies(eau);
+        recoverSta.ajouterEnergies(eau,eau);
+        starFreeze.ajouterEnergies(eau,normal,normal);
+        slap.ajouterEnergies(eau);
+        bind.ajouterEnergies(plante,normal);
+        tackleElec.ajouterEnergies(normal);
+        confuseRayGoup.ajouterEnergies(feu,feu);
+        poisonSting.ajouterEnergies(plante);
         for (Cartes c : listCartes) {
             if (c.getType().equals("pokemon")) {
                 listPoke.add(c);
@@ -420,19 +830,19 @@ public class HelloController implements Initializable {
             } else if (nombreCliques <= 2) {
                 Cartes c = listEnergies.get(Cartes.getRandomNumber(listEnergies));
                 listCartesObtenu.add(c);
-                listCartesUtilisables.add(c);
+                c.incrementNbObtenu();
                 changeImageViewImg(carteObtenue, c.getURLimage());
                 nombreCliques = nombreCliques + 1;
             } else if (nombreCliques <= 4) {
                 Cartes c = listDresseurs.get(Cartes.getRandomNumber(listDresseurs));
                 listCartesObtenu.add(c);
-                listCartesUtilisables.add(c);
+                c.incrementNbObtenu();
                 changeImageViewImg(carteObtenue, c.getURLimage());
                 nombreCliques = nombreCliques + 1;
             } else if (nombreCliques <= 10) {
                 Cartes c = listPoke.get(Cartes.getRandomNumber(listPoke));
                 listCartesObtenu.add(c);
-                listCartesUtilisables.add(c);
+                c.incrementNbObtenu();
                 changeImageViewImg(carteObtenue, c.getURLimage());
                 nombreCliques = nombreCliques + 1;
             }
@@ -442,17 +852,98 @@ public class HelloController implements Initializable {
                 nombreCliques=0;
                 btnAchat.setVisible(true);
             }
-
         }
     }
     public void affCarte (Cartes c){
-        changeImageViewImg(imgCard,c.getURLimage());
-        lblNom.setText("nom : "+c.getNom());
-        lblPv.setText("PV : "+ c.getPv());
-        lblType.setText("Type : "+c.getPokeType());
-        lblEffet.setText("Effet : "+c.getEffet());
-        lblSousEvo.setText("Sous-évolution : "+c.getFormeAnterieure());
-        lblCpRetaite.setText("coup de retraite : "+c.getCpRetraite());
+        if (c.getType().equals("pokemon") ) {
+            changeImageViewImg(imgCard, c.getURLimage());
+            lblNom.setText("nom : " + c.getNom());
+            lblPv.setText("PV : " + c.getPv());
+            lblType.setText("Type : " + c.getPokeType());
+            lblEffet.setText("Effet : " + c.getEffet());
+            lblSousEvo.setText("Sous-évolution : " + c.getFormeAnterieure());
+            lblCpRetaite.setText("coup de retraite : " + c.getCpRetraite());
+            lblAttaque.setText("attaque 1 : "+ c.getAttaques().getFirst().toString());
+            imgEnergie1.setVisible(true);
+            imgEnergie2.setVisible(true);
+            imgEnergie3.setVisible(true);
+            imgEnergie4.setVisible(true);
+            imgEnergie5.setVisible(true);
+            imgEnergie6.setVisible(true);
+            imgEnergie7.setVisible(true);
+            imgEnergie8.setVisible(true);
+            ArrayList<energie> energies1 = c.getAttaques().getFirst().getEnergies();
+            changeImageViewImg(imgEnergie1,energies1.getFirst().getURL());
+            if (energies1.size() > 1){
+                changeImageViewImg(imgEnergie2, energies1.get(1).getURL());
+            }
+            else {
+                imgEnergie2.setVisible(false);
+            }
+            if (energies1.size() > 2){
+                changeImageViewImg(imgEnergie3, energies1.get(2).getURL());
+            }
+            else imgEnergie3.setVisible(false);
+            if (energies1.size() > 3){
+                changeImageViewImg(imgEnergie4, energies1.get(3).getURL());
+            }
+            else{
+                imgEnergie4.setVisible(false);
+            }
+
+            if(c.getAttaques().size()>1){
+                lblAttaque2.setText("attaque 2 : "+ c.getAttaques().get(1).toString());
+                if (c.getAttaques().size() > 1) {
+                    ArrayList<energie> energies2 = c.getAttaques().get(1).getEnergies();
+                    lblAttaque2.setText("attaque 2 : " + c.getAttaques().get(1).toString());
+                    changeImageViewImg(imgEnergie5, energies2.get(0).getURL());
+                    if (energies2.size() > 1) {
+                        changeImageViewImg(imgEnergie6, energies2.get(1).getURL());
+                    }
+                    else {
+                        imgEnergie6.setVisible(false);
+                    }
+                    if (energies2.size() > 2){
+                        changeImageViewImg(imgEnergie7, energies2.get(2).getURL());
+                    }
+                    else{
+                        imgEnergie7.setVisible(false);
+                    }
+                    if (energies2.size() > 3) {
+                        changeImageViewImg(imgEnergie8, energies2.get(3).getURL());
+                    }
+                    else {
+                        imgEnergie8.setVisible(false);
+                    }
+                }
+            }
+            else {
+                lblAttaque2.setText("");
+                imgEnergie5.setVisible(false);
+                imgEnergie6.setVisible(false);
+                imgEnergie7.setVisible(false);
+                imgEnergie8.setVisible(false);
+            }
+        }
+        else {
+            changeImageViewImg(imgCard, c.getURLimage());
+            lblNom.setText("nom : " + c.getNom());
+            lblPv.setText("");
+            lblType.setText("");
+            lblEffet.setText("Effet : " + c.getEffet());
+            lblSousEvo.setText("");
+            lblCpRetaite.setText("");
+            lblAttaque.setText("");
+            lblAttaque2.setText("");
+            imgEnergie1.setVisible(false);
+            imgEnergie2.setVisible(false);
+            imgEnergie3.setVisible(false);
+            imgEnergie4.setVisible(false);
+            imgEnergie5.setVisible(false);
+            imgEnergie6.setVisible(false);
+            imgEnergie7.setVisible(false);
+            imgEnergie8.setVisible(false);
+        }
     }
     public void affDeck(){
         changeImageViewImg(imgCarte1,deck.getFirst().getURLimage());
@@ -476,6 +967,28 @@ public class HelloController implements Initializable {
         changeImageViewImg(imgCarte19,deck.get(18).getURLimage());
         changeImageViewImg(imgCarte20,deck.get(19).getURLimage());
     }
+    public void resetDeck(){
+        changeImageViewImg(imgCarte1,missingNo.getURLimage());
+        changeImageViewImg(imgCarte2,missingNo.getURLimage());
+        changeImageViewImg(imgCarte3,missingNo.getURLimage());
+        changeImageViewImg(imgCarte4,missingNo.getURLimage());
+        changeImageViewImg(imgCarte5,missingNo.getURLimage());
+        changeImageViewImg(imgCarte6,missingNo.getURLimage());
+        changeImageViewImg(imgCarte7,missingNo.getURLimage());
+        changeImageViewImg(imgCarte8,missingNo.getURLimage());
+        changeImageViewImg(imgCarte9,missingNo.getURLimage());
+        changeImageViewImg(imgCarte10,missingNo.getURLimage());
+        changeImageViewImg(imgCarte11,missingNo.getURLimage());
+        changeImageViewImg(imgCarte12,missingNo.getURLimage());
+        changeImageViewImg(imgCarte13,missingNo.getURLimage());
+        changeImageViewImg(imgCarte14,missingNo.getURLimage());
+        changeImageViewImg(imgCarte15,missingNo.getURLimage());
+        changeImageViewImg(imgCarte16,missingNo.getURLimage());
+        changeImageViewImg(imgCarte17,missingNo.getURLimage());
+        changeImageViewImg(imgCarte18,missingNo.getURLimage());
+        changeImageViewImg(imgCarte19,missingNo.getURLimage());
+        changeImageViewImg(imgCarte20,missingNo.getURLimage());
+    }
     public void clickDeck(MouseEvent mouseEvent) {
         clearAll();
         visible(apDeck);
@@ -484,6 +997,7 @@ public class HelloController implements Initializable {
 
     public void clickBooster(MouseEvent mouseEvent) {
         clearAll();
+        lblArgent.setText(String.valueOf(argent));
         visible(apBooster);
         changeImageViewImg(carteObtenue,booster.getURLimage());
     }
@@ -517,7 +1031,7 @@ public class HelloController implements Initializable {
     }
 
     public void clickSuivant(MouseEvent mouseEvent) {
-        if (indice<listCartesObtenu.size()){
+        if (indice<listCartesObtenu.size()-1){
             indice=indice+1;
             affCarte(listCartesObtenu.get(indice));
         }
@@ -525,11 +1039,34 @@ public class HelloController implements Initializable {
 
     public void clickAddDeck(MouseEvent mouseEvent) {
         if (deck.size()<20) {
-            if (listCartesObtenu.get(indice).getNbDansDeck()<=listCartesObtenu.get(indice).getNbObtenu()){
+            if (listCartesObtenu.get(indice).getNbDansDeck()<listCartesObtenu.get(indice).getNbObtenu()){
                 deck.add(listCartesObtenu.get(indice));
                 listCartesObtenu.get(indice).incrementNbDansDeck();
             }
         }
+    }
+
+    public void clickVendre(MouseEvent mouseEvent) {
+        Cartes c= listCartesObtenu.get(indice);
+        deck.remove(c);
+        resetDeck();
+        listCartesObtenu.remove(indice);
+        argent=argent+50;
+        affCarte(listCartesObtenu.get(indice));
+    }
+
+    public void clickInfo1(MouseEvent mouseEvent) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(listCartesObtenu.get(indice).getAttaques().getFirst().getNom());
+        alert.setContentText(listCartesObtenu.get(indice).getAttaques().getFirst().getEffet());
+        alert.showAndWait();
+    }
+
+    public void clickInfo2(MouseEvent mouseEvent) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(listCartesObtenu.get(indice).getAttaques().get(1).getNom());
+        alert.setContentText(listCartesObtenu.get(indice).getAttaques().get(1).getEffet());
+        alert.showAndWait();
     }
 }
 

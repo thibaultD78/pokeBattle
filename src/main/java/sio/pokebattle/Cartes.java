@@ -138,4 +138,11 @@ public class Cartes {
     public void incrementNbObtenu(){
         this.nbObtenu=this.nbObtenu+1;
     }
+    public void ajouterAttque(Attaque a){
+        attaques.add(a);
+    }
+    public void ajouterAttque(Attaque a,Attaque b){
+        attaques.add(a);
+        attaques.add(b);
+    }
 }
