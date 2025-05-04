@@ -353,12 +353,12 @@ public class HelloController implements Initializable {
         missingNo=new Cartes("","","","imageBase.png");
         boosterOuvert=new Cartes("","","","pokemonOuvert.png");
         booster=new Cartes("","","","pokemon.png");
-        eeau= new Cartes("energie eau","energie","apporte une ernergie eau","365_102.png" );
-        epsy= new Cartes("energie psy","energie","apporte une ernergie psy","364_101.png" );
-        eelec= new Cartes("energie électrique","energie","apporte une ernergie électrique","363_100.png" );
-        eplante= new Cartes("energie plante","energie","apporte une ernergie plante","362_99.png" );
-        efeu= new Cartes("energie feu","energie","apporte une ernergie feu","361_98.png" );
-        ecombat= new Cartes("energie combat","energie","apporte une ernergie combat","360_97.png" );
+        eeau= new Cartes("energie eau","energie","apporte une energie eau","365_102.png" );
+        epsy= new Cartes("energie psy","energie","apporte une energie psy","364_101.png" );
+        eelec= new Cartes("energie électrique","energie","apporte une energie électrique","363_100.png" );
+        eplante= new Cartes("energie plante","energie","apporte une energie plante","362_99.png" );
+        efeu= new Cartes("energie feu","energie","apporte une energie feu","361_98.png" );
+        ecombat= new Cartes("energie combat","energie","apporte une energie combat","360_97.png" );
         echange= new Cartes("échange","dresseur","échange 1 pokemon de ton banc \navec ton pokemon actif","358_95.png");
         potion= new Cartes("potion","dresseur","soigne de 20 pv un pokemon","357_94.png");
         raffaleVent= new Cartes("raffale de vent","dresseur","échange un pokemon du banc \nde ton adversaire avec son pokemon \nactif","356_93.png");
@@ -557,7 +557,7 @@ public class HelloController implements Initializable {
         slap=new Attaque("Slap","eau",20,"");
         bind=new Attaque("Bind","plante",20,"lancez une pièce si c'est face le pokemon adverse est paralizé");
         tackleElec=new Attaque("Tackle","électrique",10,"");
-        poisonSting=new Attaque("Poison Sting","plante",10,"lancez une pièce si c'est face le pokemon adverse est paralisé");
+        poisonSting=new Attaque("Poison Sting","plante",10,"lancez une pièce si c'est face le pokemon adverse est empoisonné");
         listCartes.add(eeau);
         listCartes.add(epsy);
         listCartes.add(eelec);
