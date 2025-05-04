@@ -39,84 +39,84 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="apDeck" prefHeight="200.0" prefWidth="200.0" visible="false">
+      <AnchorPane fx:id="apDeck" prefHeight="200.0" prefWidth="200.0">
          <children>
-            <ImageView fx:id="imgCarte1" fitHeight="116.0" fitWidth="91.0" layoutX="503.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte20" fitHeight="116.0" fitWidth="91.0" layoutX="503.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte2" fitHeight="124.0" fitWidth="82.0" layoutX="503.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte7" fitHeight="124.0" fitWidth="82.0" layoutX="503.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte3" fitHeight="116.0" fitWidth="82.0" layoutX="420.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte6" fitHeight="116.0" fitWidth="82.0" layoutX="420.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte4" fitHeight="116.0" fitWidth="82.0" layoutX="461.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte13" fitHeight="116.0" fitWidth="82.0" layoutX="461.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte5" fitHeight="116.0" fitWidth="91.0" layoutX="420.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte19" fitHeight="116.0" fitWidth="91.0" layoutX="420.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte6" fitHeight="116.0" fitWidth="89.0" layoutX="338.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte5" fitHeight="116.0" fitWidth="89.0" layoutX="338.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte7" fitHeight="123.0" fitWidth="82.0" layoutX="256.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte4" fitHeight="123.0" fitWidth="82.0" layoutX="256.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte8" fitHeight="116.0" fitWidth="94.0" layoutX="173.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte3" fitHeight="116.0" fitWidth="94.0" layoutX="173.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte9" fitHeight="116.0" fitWidth="82.0" layoutX="91.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte2" fitHeight="116.0" fitWidth="82.0" layoutX="91.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte10" fitHeight="116.0" fitWidth="82.0" layoutX="8.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte1" fitHeight="116.0" fitWidth="82.0" layoutX="8.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte11" fitHeight="116.0" fitWidth="82.0" layoutX="379.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte12" fitHeight="116.0" fitWidth="82.0" layoutX="379.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte12" fitHeight="116.0" fitWidth="82.0" layoutX="297.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte11" fitHeight="116.0" fitWidth="82.0" layoutX="297.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte13" fitHeight="116.0" fitWidth="94.0" layoutX="218.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte10" fitHeight="116.0" fitWidth="94.0" layoutX="218.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte14" fitHeight="116.0" fitWidth="94.0" layoutX="136.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte9" fitHeight="116.0" fitWidth="94.0" layoutX="136.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte15" fitHeight="116.0" fitWidth="82.0" layoutX="55.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte8" fitHeight="116.0" fitWidth="82.0" layoutX="55.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte16" fitHeight="116.0" fitWidth="82.0" layoutX="338.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte18" fitHeight="116.0" fitWidth="82.0" layoutX="338.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
@@ -126,17 +126,17 @@
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte18" fitHeight="116.0" fitWidth="82.0" layoutX="177.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte16" fitHeight="116.0" fitWidth="82.0" layoutX="177.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte19" fitHeight="116.0" fitWidth="82.0" layoutX="95.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte15" fitHeight="116.0" fitWidth="82.0" layoutX="95.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgCarte20" fitHeight="120.0" fitWidth="82.0" layoutX="14.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCarte14" fitHeight="120.0" fitWidth="82.0" layoutX="14.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/imageBase.png" />
                </image>
@@ -154,6 +154,106 @@
                   <Font size="24.0" />
                </font>
             </Label>
+            <ImageView fx:id="btnRetrer1" fitHeight="59.0" fitWidth="76.0" layoutX="11.0" layoutY="140.0" onMouseClicked="#clickretirer1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer2" fitHeight="59.0" fitWidth="76.0" layoutX="94.0" layoutY="140.0" onMouseClicked="#clickretirer2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer3" fitHeight="59.0" fitWidth="76.0" layoutX="177.0" layoutY="140.0" onMouseClicked="#clickretirer3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer4" fitHeight="59.0" fitWidth="76.0" layoutX="259.0" layoutY="140.0" onMouseClicked="#clickretirer4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer5" fitHeight="59.0" fitWidth="76.0" layoutX="341.0" layoutY="140.0" onMouseClicked="#clickretirer5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer6" fitHeight="59.0" fitWidth="76.0" layoutX="423.0" layoutY="140.0" onMouseClicked="#clickretirer6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer7" fitHeight="59.0" fitWidth="76.0" layoutX="506.0" layoutY="140.0" onMouseClicked="#clickretirer7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer8" fitHeight="59.0" fitWidth="76.0" layoutX="58.0" layoutY="258.0" onMouseClicked="#clickretirer8" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer9" fitHeight="59.0" fitWidth="76.0" layoutX="139.0" layoutY="258.0" onMouseClicked="#clickretirer9" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer10" fitHeight="59.0" fitWidth="76.0" layoutX="221.0" layoutY="258.0" onMouseClicked="#clickretirer10" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer11" fitHeight="59.0" fitWidth="76.0" layoutX="300.0" layoutY="258.0" onMouseClicked="#clickretirer11" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer12" fitHeight="59.0" fitWidth="76.0" layoutX="382.0" layoutY="258.0" onMouseClicked="#clickretirer12" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer13" fitHeight="59.0" fitWidth="76.0" layoutX="464.0" layoutY="258.0" onMouseClicked="#clickretirer13" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer14" fitHeight="59.0" fitWidth="76.0" layoutX="17.0" layoutY="373.0" onMouseClicked="#clickretirer14" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer15" fitHeight="59.0" fitWidth="76.0" layoutX="98.0" layoutY="373.0" onMouseClicked="#clickretirer15" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer16" fitHeight="59.0" fitWidth="76.0" layoutX="180.0" layoutY="373.0" onMouseClicked="#clickretirer16" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer17" fitHeight="59.0" fitWidth="76.0" layoutX="262.0" layoutY="373.0" onMouseClicked="#clickretirer17" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer18" fitHeight="59.0" fitWidth="76.0" layoutX="341.0" layoutY="373.0" onMouseClicked="#clickretirer18" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer19" fitHeight="59.0" fitWidth="76.0" layoutX="423.0" layoutY="373.0" onMouseClicked="#clickretirer19" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnRetrer20" fitHeight="59.0" fitWidth="76.0" layoutX="506.0" layoutY="373.0" onMouseClicked="#clickretirer20" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/retirer.png" />
+               </image>
+            </ImageView>
          </children></AnchorPane>
       <AnchorPane fx:id="apBooster" prefHeight="200.0" prefWidth="200.0" visible="false">
          <children>
@@ -205,7 +305,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="apCollection" prefHeight="200.0" prefWidth="200.0">
+      <AnchorPane fx:id="apCollection" prefHeight="200.0" prefWidth="200.0" visible="false">
          <children>
             <ImageView fx:id="imgCard" fitHeight="296.0" fitWidth="206.0" layoutX="94.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -288,12 +388,12 @@
                   <Image url="@../../images/energieNormal.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="463.0" layoutY="277.0" onMouseClicked="#clickInfo2" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btnInfo2" fitHeight="20.0" fitWidth="20.0" layoutX="463.0" layoutY="277.0" onMouseClicked="#clickInfo2" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/infos.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="463.0" layoutY="241.0" onMouseClicked="#clickInfo1" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btnInfo1" fitHeight="20.0" fitWidth="20.0" layoutX="463.0" layoutY="241.0" onMouseClicked="#clickInfo1" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/infos.png" />
                </image>

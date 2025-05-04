@@ -66,6 +66,28 @@ public class HelloController implements Initializable {
     public ImageView imgEnergie6;
     public ImageView imgEnergie7;
     public ImageView imgEnergie8;
+    public ImageView btnInfo2;
+    public ImageView btnInfo1;
+    public ImageView btnRetrer1;
+    public ImageView btnRetrer2;
+    public ImageView btnRetrer3;
+    public ImageView btnRetrer4;
+    public ImageView btnRetrer5;
+    public ImageView btnRetrer6;
+    public ImageView btnRetrer7;
+    public ImageView btnRetrer8;
+    public ImageView btnRetrer9;
+    public ImageView btnRetrer10;
+    public ImageView btnRetrer11;
+    public ImageView btnRetrer12;
+    public ImageView btnRetrer13;
+    public ImageView btnRetrer14;
+    public ImageView btnRetrer15;
+    public ImageView btnRetrer16;
+    public ImageView btnRetrer17;
+    public ImageView btnRetrer18;
+    public ImageView btnRetrer19;
+    public ImageView btnRetrer20;
     Personages j1;
     Personages j2;
     Cartes eeau;
@@ -700,7 +722,7 @@ public class HelloController implements Initializable {
         stari.ajouterAttque(slap);
         sacdeneu.ajouterAttque(bind,poisonpowder);
         voltorbe.ajouterAttque(tackleElec);
-        goupix.ajouterAttque(confuseRaySopo);
+        goupix.ajouterAttque(confuseRayGoup);
         aspicot.ajouterAttque(poisonSting);
         confuseRay.ajouterEnergies(psy,psy,psy);
         hydroPump.ajouterEnergies(eau,eau,eau);
@@ -872,6 +894,8 @@ public class HelloController implements Initializable {
             imgEnergie6.setVisible(true);
             imgEnergie7.setVisible(true);
             imgEnergie8.setVisible(true);
+            btnInfo1.setVisible(true);
+            btnInfo2.setVisible(false);
             ArrayList<energie> energies1 = c.getAttaques().getFirst().getEnergies();
             changeImageViewImg(imgEnergie1,energies1.getFirst().getURL());
             if (energies1.size() > 1){
@@ -883,7 +907,9 @@ public class HelloController implements Initializable {
             if (energies1.size() > 2){
                 changeImageViewImg(imgEnergie3, energies1.get(2).getURL());
             }
-            else imgEnergie3.setVisible(false);
+            else{
+                imgEnergie3.setVisible(false);
+            }
             if (energies1.size() > 3){
                 changeImageViewImg(imgEnergie4, energies1.get(3).getURL());
             }
@@ -893,6 +919,7 @@ public class HelloController implements Initializable {
 
             if(c.getAttaques().size()>1){
                 lblAttaque2.setText("attaque 2 : "+ c.getAttaques().get(1).toString());
+                btnInfo2.setVisible(true);
                 if (c.getAttaques().size() > 1) {
                     ArrayList<energie> energies2 = c.getAttaques().get(1).getEnergies();
                     lblAttaque2.setText("attaque 2 : " + c.getAttaques().get(1).toString());
@@ -943,6 +970,9 @@ public class HelloController implements Initializable {
             imgEnergie6.setVisible(false);
             imgEnergie7.setVisible(false);
             imgEnergie8.setVisible(false);
+            btnInfo1.setVisible(false);
+            btnInfo2.setVisible(false);
+
         }
     }
     public void affDeck(){
@@ -1067,6 +1097,167 @@ public class HelloController implements Initializable {
         alert.setHeaderText(listCartesObtenu.get(indice).getAttaques().get(1).getNom());
         alert.setContentText(listCartesObtenu.get(indice).getAttaques().get(1).getEffet());
         alert.showAndWait();
+    }
+
+    public void clickretirer1(MouseEvent mouseEvent) {
+        if(!deck.isEmpty()) {
+            deck.getFirst().decrementNbDansDeck();
+            deck.removeFirst();
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer2(MouseEvent mouseEvent) {
+        if(deck.size()>1) {
+            deck.get(1).decrementNbDansDeck();
+            deck.remove(1);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer3(MouseEvent mouseEvent) {
+        if(deck.size()>2) {
+            deck.get(2).decrementNbDansDeck();
+            deck.remove(2);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer4(MouseEvent mouseEvent) {
+        if(deck.size()>3) {
+            deck.get(3).decrementNbDansDeck();
+            deck.remove(3);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer5(MouseEvent mouseEvent) {
+        if(deck.size()>4) {
+            deck.get(4).decrementNbDansDeck();
+            deck.remove(4);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer6(MouseEvent mouseEvent) {
+        if(deck.size()>5) {
+            deck.get(5).decrementNbDansDeck();
+            deck.remove(5);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer7(MouseEvent mouseEvent) {
+        if(deck.size()>6) {
+            deck.get(6).decrementNbDansDeck();
+            deck.remove(6);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer8(MouseEvent mouseEvent) {
+        if(deck.size()>7) {
+            deck.get(7).decrementNbDansDeck();
+            deck.remove(7);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer9(MouseEvent mouseEvent) {
+        if(deck.size()>8) {
+            deck.get(8).decrementNbDansDeck();
+            deck.remove(8);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer10(MouseEvent mouseEvent) {
+        if(deck.size()>9) {
+            deck.get(9).decrementNbDansDeck();
+            deck.remove(9);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer11(MouseEvent mouseEvent) {
+        if(deck.size()>10) {
+            deck.get(10).decrementNbDansDeck();
+            deck.remove(10);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer12(MouseEvent mouseEvent) {
+        if(deck.size()>11) {
+            deck.get(11).decrementNbDansDeck();
+            deck.remove(11);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer13(MouseEvent mouseEvent) {
+        if(deck.size()>12) {
+            deck.get(12).decrementNbDansDeck();
+            deck.remove(12);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer14(MouseEvent mouseEvent) {
+        if(deck.size()>13) {
+            deck.get(13).decrementNbDansDeck();
+            deck.remove(13);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer15(MouseEvent mouseEvent) {
+        if(deck.size()>14) {
+            deck.get(14).decrementNbDansDeck();
+            deck.remove(14);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer16(MouseEvent mouseEvent) {
+        if(deck.size()>15) {
+            deck.get(15).decrementNbDansDeck();
+            deck.remove(15);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer17(MouseEvent mouseEvent) {
+        if(deck.size()>16) {
+            deck.get(16).decrementNbDansDeck();
+            deck.remove(16);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer18(MouseEvent mouseEvent) {
+        if(deck.size()>17) {
+            deck.get(17).decrementNbDansDeck();
+            deck.remove(17);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer19(MouseEvent mouseEvent) {
+        if(deck.size()>18) {
+            deck.get(18).decrementNbDansDeck();
+            deck.remove(18);
+            resetDeck();
+            affDeck();
+        }
+    }
+    public void clickretirer20(MouseEvent mouseEvent) {
+        if(deck.size()>19) {
+            deck.get(19).decrementNbDansDeck();
+            deck.remove(19);
+            resetDeck();
+            affDeck();
+        }
     }
 }
 

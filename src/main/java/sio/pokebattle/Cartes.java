@@ -135,8 +135,14 @@ public class Cartes {
     public void incrementNbDansDeck(){
         this.nbDansDeck=this.nbDansDeck+1;
     }
+    public void decrementNbDansDeck(){
+        this.nbDansDeck=this.nbDansDeck-1;
+    }
     public void incrementNbObtenu(){
         this.nbObtenu=this.nbObtenu+1;
+    }
+    public void decrementNbObtenu(){
+        this.nbObtenu=this.nbObtenu-1;
     }
     public void ajouterAttque(Attaque a){
         attaques.add(a);
