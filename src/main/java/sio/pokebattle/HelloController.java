@@ -88,6 +88,8 @@ public class HelloController implements Initializable {
     public ImageView btnRetrer18;
     public ImageView btnRetrer19;
     public ImageView btnRetrer20;
+    public Label lblFaiblesse;
+    public Label lblResistance;
     Personages j1;
     Personages j2;
     Cartes eeau;
@@ -381,75 +383,75 @@ public class HelloController implements Initializable {
         fauxProfChen= new Cartes("faux professeur Chen","dresseur","votre adversaire melange sa main \ndans son deck puis pioche \n7 cartes","336_73.png");
         sprayDesevoluant= new Cartes("spray dés-évoluant","dresseur","votre  pokemon retourne a un stade \ninferieur et se soigne de tout \nses status","335_72.png");
         rechercheInfo= new Cartes("recherche informatique","dresseur","détrusez 2 cartes et choisissez en \nune de votre deck a ajouter a \nvotre main","334_71.png");
-        alakazam=new Cartes("alakazam","pokemon","vous pouvez déplacer autant de dégats \nque vous voulez d'un de vos \npokémon a un autre de vos \npokémons","264_1.png",80,"psy",3,true,"kadabra");
-        aspicot=new Cartes("aspicot","pokemon","","332_69.png",40,"plante",1,false,"base");
-        goupix=new Cartes("goupix","pokemon","","331_68.png",50,"feu",1,false,"base");
-        voltorbe=new Cartes("voltorbe","pokemon","","330_67.png",40,"electrique",1,false,"base");
-        sacdeneu=new Cartes("sacdeneu","pokemon","","329_66.png",50,"plante",2,false,"base");
-        stari=new Cartes("stari","pokemon","","328_65.png",40,"eau",1,false,"base");
-        staros=new Cartes("staros","pokemon","","327_64.png",60,"eau",1,true,"stari");
-        carapuce=new Cartes("carapuce","pokemon","","326_63.png",40,"eau",1,false,"base");
-        sabelette=new Cartes("sabelette","pokemon","","325_62.png",40,"combat",1,false,"base");
-        ratata=new Cartes("ratata","pokemon","","324_61.png",30,"normal",0,false,"base");
-        ponyta=new Cartes("ponyta","pokemon","","323_60.png",40,"feu",1,false,"base");
-        ptitard=new Cartes("ptitard","pokemon","","322_59.png",40,"eau",1,false,"base");
-        pikachu=new Cartes("pikachu","pokemon","","321_58.png",40,"electrique",1,false,"base");
-        roucool=new Cartes("roucool","pokemon","","320_57.png",40,"normal",1,false,"base");
-        onix=new Cartes("onix","pokemon","","319_56.png",90,"combat",3,false,"base");
-        nidoran=new Cartes("nidoran","pokemon","","318_55.png",40,"psy",1,false,"base");
-        tygon=new Cartes("tygnon","pokemon","","270_7.png",70,"combat",2,false,"base");
-        tortank=new Cartes("tortank","pokemon","vous pouvez déplacer autant \nd'énergies eau que vous voulez \nd'un de vos pokemon a un autre","265_2.png",100,"eau",3,true,"carabaffe");
-        chrisacier=new Cartes("chrisacier","pokemon","","317_54.png",70,"plante",2,true,"chenipan");
-        magneti=new Cartes("magnéti","pokemon","","316_53.png",40,"electrique",1,false,"base");
-        machoc=new Cartes("machoc","pokemon","","315_52.png",50,"combat",1,false,"base");
-        smogo=new Cartes("smogo","pokemon","","314_51.png",50,"plante",1,false,"base");
-        fantominus=new Cartes("fantominus","pokemon","","313_50.png",30,"psy",0,false,"base");
-        soporifik=new Cartes("soporifik","pokemon","","312_49.png",50,"psy",1,false,"base");
-        doduo=new Cartes("doduo","pokemon","","311_48.png",50,"normal",0,false,"base");
-        topiqueur=new Cartes("topiqueur","pokemon","","310_47.png",30,"combat",0,false,"base");
-        salameche=new Cartes("salamèche","pokemon","","309_46.png",50,"feu",0,false,"base");
-        chenipan=new Cartes("chenipan","pokemon","","308_45.png",40,"plante",1,false,"base");
-        bulbizard=new Cartes("bulbizard","pokemon","","307_44.png",40,"plante",1,false,"base");
-        abra=new Cartes("abra","pokemon","","306_43.png",30,"psy",0,false,"base");
-        carabaffe=new Cartes("carabaffe","pokemon","","305_42.png",70,"eau",1,true,"carapuce");
-        otaria=new Cartes("otaria","pokemon","","304_41.png",60,"eau",1,false,"base");
-        ratatac=new Cartes("ratatac","pokemon","","303_40.png",60,"normal",1,true,"ratata");
-        leviator=new Cartes("léviator","pokemon","","269_6.png",100,"eau",3,true,"magicarp");
-        melofee=new Cartes("mélofée","pokemon","","268_5.png",40,"normal",1,false,"base");
-        porygon=new Cartes("porygon","pokemon","","302_39.png",30,"normal",1,false,"base");
-        tetarte=new Cartes("tétarte","pokemon","","301_38.png",60,"eau",1,true,"ptitard");
-        nidorino=new Cartes("nidorino","pokemon","","300_37.png",60,"plante",1,true,"nidoran");
-        magmar=new Cartes("magmar","pokemon","","299_36.png",50,"feu",2,false,"base");
-        magikarp=new Cartes("magikarp","pokemon","","298_35.png",30,"eau",1,false,"base");
-        machopeur=new Cartes("machopeur","pokemon","","297_34.png",80,"combat",3,true,"machoc");
-        coconfort=new Cartes("coconfort","pokemon","","296_33.png",80,"plante",2,true,"aspicot");
-        kadabra=new Cartes("kadabra","pokemon","","295_32.png",60,"psy",3,true,"abra");
-        lipoutou=new Cartes("lipoutou","pokemon","","294_31.png",70,"psy",2,false,"base");
-        herbizard=new Cartes("herbizard","pokemon","","393_30.png",60,"plante",1,true,"bulbizard");
-        spectrum=new Cartes("spectrum","pokemon","","292_29.png",60,"psy",1,true,"fantominus");
-        caninos=new Cartes("caninos","pokemon","","291_28.png",60,"feu",1,false,"base");
-        canarticho=new Cartes("canarticho","pokemon","","290_27.png",50,"normal",1,false,"base");
-        minidraco=new Cartes("minidraco","pokemon","","289_26.png",40,"normal",1,false,"base");
-        lamentine=new Cartes("lamentine","pokemon","","288_25.png",80,"eau",3,true,"otaria");
-        dracofeu=new Cartes("dracofeu","pokemon","vous pouvez déplacer autant \nd'énergies feu que vous voulez \nd'un de vos pokemon a un autre","267_4.png",120,"feu",3,true,"reptincelle");
-        reptincelle=new Cartes("reptincelle","pokemon","","287_24.png",80,"feu",1,true,"salamèche");
-        arcanin=new Cartes("arcanin","pokemon","","286_23.png",100,"feu",3,true,"caninos");
-        roucoups=new Cartes("roucoups","pokemon","","285_22.png",60,"normal",1,true,"roucool");
-        electrode=new Cartes("électrode","pokemon","vous pouvez transformer ce \npokemon en deux énergies de \nvotre choix et les attacher \nà un de vos pokemon","284_21.png",80,"électrique",1,true,"voltorbe");
-        electek=new Cartes("électèk","pokemon","","283_20.png",70,"électrique",2,false,"base");
-        triopiqueur=new Cartes("triopiqueur","pokemon","","282_19.png",70,"combat",2,true,"topiqueur");
-        draco=new Cartes("draco","pokemon","","281_18.png",80,"normal",2,true,"minidraco");
-        dardargnan=new Cartes("dardargnan","pokemon","","280_17.png",80,"plante",0,true,"coconfort");
-        elector=new Cartes("élector","pokemon","","279_16.png",90,"électrique",3,false,"base");
-        florizard=new Cartes("florizard","pokemon","vous pouvez déplacer autant \nd'énergies plantes que vous voulez \nd'un de vos pokemon a un autre","278_15.png",100,"plante",2,true,"herbizard");
-        raichu=new Cartes("raichu","pokemon","","277_14.png",80,"électrique",1,true,"pikachu");
-        tartard=new Cartes("tartard","pokemon","","276_13.png",90,"eau",3,true,"tétarte");
-        feunard=new Cartes("feunard","pokemon","","275_12.png",80,"feu",1,true,"goupix");
-        nidoking=new Cartes("nidoking","pokemon","","274_11.png",90,"plante",3,true,"nidorino");
-        mewtwo=new Cartes("mewtwo","pokemon","","273_10.png",80,"psy",3,false,"base");
-        magneton=new Cartes("magnéton","pokemon","","272_9.png",60,"électrique",1,true,"magnéti");
-        macogneur=new Cartes("macogneur","pokemon","infigez 10 dégats au pokemon qui \nattaque macogneur","271_8.png",100,"combat",3,true,"machopeur");
-        levenard=new Cartes("levénard","pokemon","","266_3.png",120,"normal",1,false,"base");
+        alakazam=new Cartes("alakazam","pokemon","vous pouvez déplacer autant de dégats \nque vous voulez d'un de vos \npokémon a un autre de vos \npokémons","264_1.png",80,"psy",3,true,"kadabra","psy","");
+        aspicot=new Cartes("aspicot","pokemon","","332_69.png",40,"plante",1,false,"base","feu","");
+        goupix=new Cartes("goupix","pokemon","","331_68.png",50,"feu",1,false,"base","eau","");
+        voltorbe=new Cartes("voltorbe","pokemon","","330_67.png",40,"electrique",1,false,"base","combat","");
+        sacdeneu=new Cartes("sacdeneu","pokemon","","329_66.png",50,"plante",2,false,"base","feu","");
+        stari=new Cartes("stari","pokemon","","328_65.png",40,"eau",1,false,"base","électrique","");
+        staros=new Cartes("staros","pokemon","","327_64.png",60,"eau",1,true,"stari","électrique","");
+        carapuce=new Cartes("carapuce","pokemon","","326_63.png",40,"eau",1,false,"base","électrique","");
+        sabelette=new Cartes("sabelette","pokemon","","325_62.png",40,"combat",1,false,"base","plante","électrique");
+        ratata=new Cartes("ratata","pokemon","","324_61.png",30,"normal",0,false,"base","combat","psy");
+        ponyta=new Cartes("ponyta","pokemon","","323_60.png",40,"feu",1,false,"base","eau","");
+        ptitard=new Cartes("ptitard","pokemon","","322_59.png",40,"eau",1,false,"base","plante","");
+        pikachu=new Cartes("pikachu","pokemon","","321_58.png",40,"electrique",1,false,"base","combat","");
+        roucool=new Cartes("roucool","pokemon","","320_57.png",40,"normal",1,false,"base","électrique","combat");
+        onix=new Cartes("onix","pokemon","","319_56.png",90,"combat",3,false,"base","plante","");
+        nidoran=new Cartes("nidoran","pokemon","","318_55.png",40,"plante",1,false,"base","psy","");
+        tygon=new Cartes("tygnon","pokemon","","270_7.png",70,"combat",2,false,"base","psy","");
+        tortank=new Cartes("tortank","pokemon","vous pouvez déplacer autant \nd'énergies eau que vous voulez \nd'un de vos pokemon a un autre","265_2.png",100,"eau",3,true,"carabaffe","électrique","");
+        chrisacier=new Cartes("chrisacier","pokemon","","317_54.png",70,"plante",2,true,"chenipan","feu","");
+        magneti=new Cartes("magnéti","pokemon","","316_53.png",40,"electrique",1,false,"base","combat","");
+        machoc=new Cartes("machoc","pokemon","","315_52.png",50,"combat",1,false,"base","psy","");
+        smogo=new Cartes("smogo","pokemon","","314_51.png",50,"plante",1,false,"base","psy","");
+        fantominus=new Cartes("fantominus","pokemon","","313_50.png",30,"psy",0,false,"base","","combat");
+        soporifik=new Cartes("soporifik","pokemon","","312_49.png",50,"psy",1,false,"base","psy","");
+        doduo=new Cartes("doduo","pokemon","","311_48.png",50,"normal",0,false,"base","électrique","combat");
+        topiqueur=new Cartes("topiqueur","pokemon","","310_47.png",30,"combat",0,false,"base","plante","électrique");
+        salameche=new Cartes("salamèche","pokemon","","309_46.png",50,"feu",0,false,"base","eau","");
+        chenipan=new Cartes("chenipan","pokemon","","308_45.png",40,"plante",1,false,"base","feu","");
+        bulbizard=new Cartes("bulbizard","pokemon","","307_44.png",40,"plante",1,false,"base","feu","");
+        abra=new Cartes("abra","pokemon","","306_43.png",30,"psy",0,false,"base","psy","");
+        carabaffe=new Cartes("carabaffe","pokemon","","305_42.png",70,"eau",1,true,"carapuce","électrique","");
+        otaria=new Cartes("otaria","pokemon","","304_41.png",60,"eau",1,false,"base","électrque","");
+        ratatac=new Cartes("ratatac","pokemon","","303_40.png",60,"normal",1,true,"ratata","combat","psy");
+        leviator=new Cartes("léviator","pokemon","","269_6.png",100,"eau",3,true,"magicarp","plante","combat");
+        melofee=new Cartes("mélofée","pokemon","","268_5.png",40,"normal",1,false,"base","combat","psy");
+        porygon=new Cartes("porygon","pokemon","","302_39.png",30,"normal",1,false,"base","combat","psy");
+        tetarte=new Cartes("tétarte","pokemon","","301_38.png",60,"eau",1,true,"ptitard","plante","");
+        nidorino=new Cartes("nidorino","pokemon","","300_37.png",60,"plante",1,true,"nidoran","psy","");
+        magmar=new Cartes("magmar","pokemon","","299_36.png",50,"feu",2,false,"base","eau","");
+        magikarp=new Cartes("magikarp","pokemon","","298_35.png",30,"eau",1,false,"base","électrique","");
+        machopeur=new Cartes("machopeur","pokemon","","297_34.png",80,"combat",3,true,"machoc","psy","");
+        coconfort=new Cartes("coconfort","pokemon","","296_33.png",80,"plante",2,true,"aspicot","feu","");
+        kadabra=new Cartes("kadabra","pokemon","","295_32.png",60,"psy",3,true,"abra","psy","");
+        lipoutou=new Cartes("lipoutou","pokemon","","294_31.png",70,"psy",2,false,"base","psy","");
+        herbizard=new Cartes("herbizard","pokemon","","393_30.png",60,"plante",1,true,"bulbizard","feu","");
+        spectrum=new Cartes("spectrum","pokemon","","292_29.png",60,"psy",1,true,"fantominus","","combat");
+        caninos=new Cartes("caninos","pokemon","","291_28.png",60,"feu",1,false,"base","eau","");
+        canarticho=new Cartes("canarticho","pokemon","","290_27.png",50,"normal",1,false,"base","électrique","combat");
+        minidraco=new Cartes("minidraco","pokemon","","289_26.png",40,"normal",1,false,"base","","psy");
+        lamentine=new Cartes("lamentine","pokemon","","288_25.png",80,"eau",3,true,"otaria","électrique","");
+        dracofeu=new Cartes("dracofeu","pokemon","vous pouvez déplacer autant \nd'énergies feu que vous voulez \nd'un de vos pokemon a un autre","267_4.png",120,"feu",3,true,"reptincelle","eau","combat");
+        reptincelle=new Cartes("reptincelle","pokemon","","287_24.png",80,"feu",1,true,"salamèche","eau","");
+        arcanin=new Cartes("arcanin","pokemon","","286_23.png",100,"feu",3,true,"caninos","eau","");
+        roucoups=new Cartes("roucoups","pokemon","","285_22.png",60,"normal",1,true,"roucool","électrique","combat");
+        electrode=new Cartes("électrode","pokemon","vous pouvez transformer ce \npokemon en deux énergies de \nvotre choix et les attacher \nà un de vos pokemon","284_21.png",80,"électrique",1,true,"voltorbe","combat","");
+        electek=new Cartes("électèk","pokemon","","283_20.png",70,"électrique",2,false,"base","combat","");
+        triopiqueur=new Cartes("triopiqueur","pokemon","","282_19.png",70,"combat",2,true,"topiqueur","plante","électrique");
+        draco=new Cartes("draco","pokemon","","281_18.png",80,"normal",2,true,"minidraco","","psy");
+        dardargnan=new Cartes("dardargnan","pokemon","","280_17.png",80,"plante",0,true,"coconfort","feu","combat");
+        elector=new Cartes("élector","pokemon","","279_16.png",90,"électrique",3,false,"base","combat","");
+        florizard=new Cartes("florizard","pokemon","vous pouvez déplacer autant \nd'énergies plantes que vous voulez \nd'un de vos pokemon a un autre","278_15.png",100,"plante",2,true,"herbizard","feu","");
+        raichu=new Cartes("raichu","pokemon","","277_14.png",80,"électrique",1,true,"pikachu","combat","");
+        tartard=new Cartes("tartard","pokemon","","276_13.png",90,"eau",3,true,"tétarte","plante","");
+        feunard=new Cartes("feunard","pokemon","","275_12.png",80,"feu",1,true,"goupix","eau","");
+        nidoking=new Cartes("nidoking","pokemon","","274_11.png",90,"plante",3,true,"nidorino","psy","");
+        mewtwo=new Cartes("mewtwo","pokemon","","273_10.png",80,"psy",3,false,"base","psy","");
+        magneton=new Cartes("magnéton","pokemon","","272_9.png",60,"électrique",1,true,"magnéti","combat","");
+        macogneur=new Cartes("macogneur","pokemon","infigez 10 dégats au pokemon qui \nattaque macogneur","271_8.png",100,"combat",3,true,"machopeur","psy","");
+        levenard=new Cartes("levénard","pokemon","","266_3.png",120,"normal",1,false,"base","combat","psy");
         confuseRayGoup=new Attaque("Confuse Ray","feu",10,"lancez une pièce si c'est face le pokemon adverse est confu");
         recoverSta=new Attaque("Recover","eau",0,"soigne staros en echange d'une energie eau");
         confuseRay=new Attaque("Confuse Ray","psy",30,"lancer une pièce si c'est face le pokemon adverse est confu");
@@ -886,6 +888,20 @@ public class HelloController implements Initializable {
             lblSousEvo.setText("Sous-évolution : " + c.getFormeAnterieure());
             lblCpRetaite.setText("coup de retraite : " + c.getCpRetraite());
             lblAttaque.setText("attaque 1 : "+ c.getAttaques().getFirst().toString());
+            if(c.getFaiblesse()!=""){
+                lblFaiblesse.setText("faiblesse : "+ c.getFaiblesse());
+                lblFaiblesse.setVisible(true);
+            }
+            else {
+                lblFaiblesse.setVisible(false);
+            }
+            if(c.getResistance()!=""){
+                lblResistance.setText("résistance : "+ c.getResistance());
+                lblResistance.setVisible(true);
+            }
+            else {
+                lblResistance.setVisible(false);
+            }
             imgEnergie1.setVisible(true);
             imgEnergie2.setVisible(true);
             imgEnergie3.setVisible(true);
@@ -894,7 +910,10 @@ public class HelloController implements Initializable {
             imgEnergie6.setVisible(true);
             imgEnergie7.setVisible(true);
             imgEnergie8.setVisible(true);
-            btnInfo1.setVisible(true);
+            btnInfo1.setVisible(false);
+            if(c.getAttaques().getFirst().getEffet()!="") {
+                btnInfo1.setVisible(true);
+            }
             btnInfo2.setVisible(false);
             ArrayList<energie> energies1 = c.getAttaques().getFirst().getEnergies();
             changeImageViewImg(imgEnergie1,energies1.getFirst().getURL());
@@ -919,7 +938,9 @@ public class HelloController implements Initializable {
 
             if(c.getAttaques().size()>1){
                 lblAttaque2.setText("attaque 2 : "+ c.getAttaques().get(1).toString());
-                btnInfo2.setVisible(true);
+                if(c.getAttaques().get(1).getEffet()!=""){
+                    btnInfo2.setVisible(true);
+                }
                 if (c.getAttaques().size() > 1) {
                     ArrayList<energie> energies2 = c.getAttaques().get(1).getEnergies();
                     lblAttaque2.setText("attaque 2 : " + c.getAttaques().get(1).toString());
@@ -972,7 +993,8 @@ public class HelloController implements Initializable {
             imgEnergie8.setVisible(false);
             btnInfo1.setVisible(false);
             btnInfo2.setVisible(false);
-
+            lblResistance.setVisible(false);
+            lblFaiblesse.setVisible(false);
         }
     }
     public void affDeck(){

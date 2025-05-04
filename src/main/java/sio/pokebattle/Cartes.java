@@ -16,6 +16,9 @@ public class Cartes {
     private ArrayList<Attaque> attaques;
     private int nbDansDeck;
     private int nbObtenu;
+    private String faiblesse;
+    private String resistance;
+
 
     public Cartes(String nom, String type, String effet, String URLimage) {
         this.nom = nom;
@@ -26,7 +29,7 @@ public class Cartes {
         this.nbObtenu=0;
     }
 
-    public Cartes(String nom, String type, String effet, String URLimage, int pv, String pokeType, int cpRetraite, boolean estUneEvo, String formeAnterieure) {
+    public Cartes(String nom, String type, String effet, String URLimage, int pv, String pokeType, int cpRetraite, boolean estUneEvo, String formeAnterieure, String faiblesse, String resistance) {
         this.nom = nom;
         this.type = type;
         this.effet = effet;
@@ -39,6 +42,16 @@ public class Cartes {
         this.attaques= new ArrayList<>();
         this.nbDansDeck=0;
         this.nbObtenu=0;
+        this.faiblesse=faiblesse;
+        this.resistance=resistance;
+    }
+
+    public String getFaiblesse() {
+        return faiblesse;
+    }
+
+    public String getResistance() {
+        return resistance;
     }
 
     public int getNbDansDeck() {
