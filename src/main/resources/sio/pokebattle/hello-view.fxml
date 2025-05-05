@@ -307,9 +307,9 @@
       </AnchorPane>
       <AnchorPane fx:id="apCollection" prefHeight="200.0" prefWidth="200.0">
          <children>
-            <ImageView fitHeight="324.0" fitWidth="216.0" layoutX="325.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="352.0" fitWidth="241.0" layoutX="349.0" layoutY="25.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../images/black.png" />
+                  <Image url="@../../images/trueBlack.png" />
                </image>
             </ImageView>
             <ImageView fx:id="imgCard" fitHeight="296.0" fitWidth="206.0" layoutX="94.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
