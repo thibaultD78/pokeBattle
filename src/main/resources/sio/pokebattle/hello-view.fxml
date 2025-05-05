@@ -405,12 +405,6 @@
             </ImageView>
             <Label fx:id="lblFaiblesse" layoutX="359.0" layoutY="317.0" text="faiblesse : ?" textFill="WHITE" />
             <Label fx:id="lblResistance" layoutX="359.0" layoutY="339.0" text="résistance : ?" textFill="WHITE" />
-            <ImageView fitHeight="25.0" fitWidth="128.0" layoutX="73.0" layoutY="365.0" onMouseClicked="#ClickchangerNom" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../images/changerNom.png" />
-               </image>
-            </ImageView>
-            <TextField fx:id="txtChangerNom" layoutX="181.0" layoutY="365.0" prefHeight="25.0" prefWidth="139.0" promptText="Entrez un surnom" />
          </children>
       </AnchorPane>
    </children>
